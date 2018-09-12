@@ -1,0 +1,29 @@
+Cómo usar las fuentes de LN en un archivo HTML.
+ 
+1. Vincular el archivo externo css (en <head> antes del archivo css propio):
+	<link rel="stylesheet" href="http://especiales.lanacion.com.ar/multimedia/proyectos/fonts/font.css">
+	<link rel="stylesheet" href="mis-estilos.css">
+
+2. Para usar las fuentes LN hay que utilizar algunos de los sig. nombres como valor de la propiedad font-family.
+
+Ej: h1 { font-family: TheSans; } 
+
+Nombres:
+	TheSans
+	TheSansItalic
+	TheSansSemi
+	TheSansSemiItalic
+	TheSansBold
+	TheSansBoldItalic
+	
+	suecaslabmedium
+	suecaslabbold
+	suecaslabthin
+	
+	suecananobold
+	suecananolight
+	suecananoheavy
+	suecananoheavy
+	suecanano
+	suecananosemibold
+	suecananomedium
