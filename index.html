@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,54 +11,94 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/style.css">
 
-
-
 </head>
-<body>
-<!-- River-->
-<div class="camisetas" id="river-rojo">
-</div>
 
-<div class="camisetas" id="river-negro">
+<body>
+    <!-- River-->
+    <div class="camisetas" id="river-rojo">
     </div>
 
-<div class="figura-equipo">
-        
-    <img class="grande" src="img/armani001.jpg" alt="">
-    <div class="plano-multiplay">
+    <div class="camisetas" id="river-negro">
+    </div>
+
+    <div class="figura-equipo">
+
+        <img class="grande" src="img/armani001.jpg" alt="">
+        <div class="plano-multiplay">
 
             <div class="rectangulo">
                 <h1>FRANCO ARMANI</h1>
                 <h2>POSICIÓN: ARQUERO | ESTATURA Y PESO:1.89 m / 88 kg</h2>
-                <p>Ganó la Copa Libertadores 2016 con Atlético Nacional de Medellín Arquero de gran trayectoria en el fútbol colombiano, llegó a River en el primer mercado de pases de 2018, y se lo apoda la murralla. </p>
-    
-                <div class="vermas">
-    
-                </div>
-    
+                <p>Ganó la Copa Libertadores 2016 con Atlético Nacional de Medellín Arquero de gran trayectoria en el
+                    fútbol colombiano, llegó a River en el primer mercado de pases de 2018, y se lo apoda la murralla.
+                </p>
             </div>
-    </div>
-    <div class="container">
-
-            <div class="fichas">
-                    <img class="fotito" src="img/1495-lux_german_270x360.png"> 
-            
-                    <h1>GERMÁN LUX</h1>
-            
-                    <h2>POSICIÓN: ARQUERO | ESTATURA Y PESO: 1.85 m / 77 kg </h2>
-            
-                    <p>
-                        Arquero surgido de las Divisiones Inferiores, debutó en River en 2002 y defendió los colores riverplatenses hasta 2007, cuando emigró al Mallorca de España. Además, en el Viejo Continente también jugó en Deportivo La Coruña.
-                        Ganó tres títulos con River y dos campeonatos importantes con la Selección Argentina: el Mundial Sub-20 de 2001 y la medalla de oro de los Juegos Olímpicos de Atenas en 2004. </p>
-             </div>
-            
+            <!-- Hace visible las fichas #fichas-river -->
+            <!-- Cambiar href según id equipo -->
+            <h4 class="vermas" href="#fichas-river" data-equipo="#fichas-river">&#10095;</h4>
+        </div>
     </div>
 
-    
-    
-</div>
+    <!-- Fichas del equipo ocultas por default -->
+    <!-- Id debe ser igual a la referencia  -->
+    <div id="fichas-river" class="container-fichas">
 
+        <div class="ficha">
+            <div class="fotito">
+                <img src="img/1495-lux_german_270x360.png">
+            </div>
+
+            <div class="ficha-txt">
+                <h1>GERMÁN LUX</h1>
+
+                <h2>POSICIÓN: ARQUERO | ESTATURA Y PESO: 1.85 m / 77 kg </h2>
+
+                <p>
+                    Arquero surgido de las Divisiones Inferiores, debutó en River en 2002 y defendió los colores
+                    riverplatenses hasta 2007, cuando emigró al Mallorca de España. Además, en el Viejo Continente
+                    también jugó en Deportivo La Coruña.
+                    Ganó tres títulos con River y dos campeonatos importantes con la Selección Argentina: el Mundial
+                    Sub-20 de 2001 y la medalla de oro de los Juegos Olímpicos de Atenas en 2004. </p>
+
+            </div>
+        </div>
+        <div class="ficha">
+            <div class="fotito">
+                <img src="img/1495-lux_german_270x360.png">
+            </div>
+
+            <div class="ficha-txt">
+                <h1>GERMÁN LUX</h1>
+
+                <h2>POSICIÓN: ARQUERO | ESTATURA Y PESO: 1.85 m / 77 kg </h2>
+
+                <p>
+                    Arquero surgido de las Divisiones Inferiores, debutó en River en 2002 y defendió los colores
+                    riverplatenses hasta 2007, cuando emigró al Mallorca de España. Además, en el Viejo Continente
+                    también jugó en Deportivo La Coruña.
+                    Ganó tres títulos con River y dos campeonatos importantes con la Selección Argentina: el Mundial
+                    Sub-20 de 2001 y la medalla de oro de los Juegos Olímpicos de Atenas en 2004. </p>
+
+            </div>
+        </div>
+    </div>
+    <script>
+            let buttons = document.querySelectorAll(".vermas")
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    let id_equipo = this.dataset.equipo
+                    let fichas = document.querySelector(id_equipo)
+                    fichas.classList.toggle("visible")
+
+                    setTimeout(() => {
+                        fichas.scrollIntoView()
+                    }, 700);
+                    
+                })
+            })
+    </script>
 
 
 </body>
+
 </html>
