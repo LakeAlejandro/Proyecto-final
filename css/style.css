@@ -89,6 +89,14 @@ img.grande {
     margin-right: 20px
 }
 
+.rectangulo h3 {
+    font-family: suecananomedium;
+    font-size: 10px;
+    margin-top: 110px;
+    margin-left: 320px;
+    margin-right: 20px;
+}
+
 .container {
     display: flex;
     /* height: 100%; */
@@ -113,7 +121,7 @@ img.grande {
 
 .ficha {
     display: flex;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0px 0px 10px 0px rgba(130,126,130,1);
     margin: 20px 0;
 }
@@ -134,6 +142,31 @@ img.grande {
     flex: 1 1 75%;
     margin-left: 20px;
 }
+
+.ficha-txt h1 {
+    font-family: suecaslabbold;
+    font-size: 25px;
+    margin-top: -5px;
+    margin-left: 0px;
+}
+
+.ficha-txt h2 {
+    font-family: suecaslabmedium;
+    font-size: 15px;
+    margin-top: -8px;
+    margin-left: 0px;
+}
+
+.ficha-txt p {
+    font-family: suecananomedium;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 20px
+}
+
+
+
 .fotito img {
     width: 100%;
     object-fit: cover;
