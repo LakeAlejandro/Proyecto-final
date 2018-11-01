@@ -3,9 +3,24 @@ html, body {
     height: 100%;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 html {
     scroll-behavior: smooth;
   }
+
 
 .camisetas {
     width: 100%;
@@ -29,7 +44,7 @@ html {
 }
 
 #river-negro {
-    background-image: url("../img/Placa\ River-negro.png");
+    background-image: url("../img/Placa\ River-negro\ copy.png");
     background-color: black;
 }
 .camiseta-mobile {
@@ -43,6 +58,7 @@ html {
         width: 100% !important;
         margin: 0 !important;
     }
+
     #river-rojo {
         background-image: none;
         display: block;
